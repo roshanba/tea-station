@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css?family=Catamaran:400,700|Grand+Hotel");
+/* ##########
+GENERIC STYLES
+################## */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Catamaran";
+
+}
+
+:root {
+    --green-color: #678e3e;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    color: var(--green-color);
+    font-size: 2rem
+}
+
+.sm-margin {
+    margin-top: 0.3rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--green-color);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    font-family: "Catamaran";
+    letter-spacing: 2px;
+
+
+}
+
+.btn--round {
+    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    text-transform: none;
+    letter-spacing: 5px;
+}
+
+.btn--outline {
+    outline: 0.2rem solid var(--green-color);
+    outline-offset: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #aed585;
+}
+
+.fas {
+    color: var(--green-color);
+    font-size: 3rem;
+}
+
+h2 {
+    letter-spacing: 5px;
+    font-size: 2rem;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+
+h6 {
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 1.45rem;
+    margin: 2rem 0;
+
+}
+
+.heading-cursive {
+    font-family: "Grand Hotel";
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: var(--green-color);
+    font-weight: 700;
+}
+
+.container-center {
+    width: 95rem;
+    margin: 0 auto;
+}
+
+
+/* ##########
+FEATURE
+################## */
+
+.section-header {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    background-image: url("../images/main-bcg.jpeg");
+    background-blend-mode: darken;
+    background-size: cover;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-header .one {
+    color: var(--green-color);
+    font-size: 3rem;
+    font-family: "Grand Hotel";
+    line-height: 0.9;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+}
+
+.section-header .two {
+    color: #fff;
+    font-size: 4rem;
+    font-family: "Catamaran";
+    line-height: 0.9;
+    font-weight: 700;
+    margin: 1.5rem 0;
+
+}
+
+/* ##########
+FEATURE
+################## */
+.section-features {
+    display: flex;
+
+}
+
+.section-features .feature-box h2 {
+    text-align: center;
+    margin: 1rem;
+}
+
+.section-features .feature-box span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.section-features .feature-box {
+    padding: 2rem;
+    background-color: #e0e0e0;
+    width: 25vw;
+}
+
+.section-features .feature-box:hover {
+
+    background-color: #fff;
+    border-bottom: 2px solid var(--green-color);
+    transform: translate();
+
+
+}
+
+
+
+
+/* ##########
+About
+################## */
+.section-about {
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 5rem;
+
+}
+
+.section-about .img {
+    width: 30rem;
+    outline: 10px solid var(--green-color);
+}
+
+.section-about .img img {
+    width: 100%;
+}
+
+.section-about .about-box {
+    width: 30rem;
+
+
+}
+
+.section-about .about-box .title {
+    font-family: "Grand Hotel";
+    font-size: 2rem;
+    letter-spacing: 5px;
+    color: var(--green-color);
+    font-weight: 700;
+}
+
+.section-about .about-box p {
+    margin: 1rem 0;
+}
+
+/* ##########
+About
+################## */
+
+.section-products {
+    background-color: rgb(219, 219, 219);
+}
+
+.section-products .container-center {
+    display: flex;
+    gap: 2rem;
+    padding: 5rem 5rem;
+
+}
+
+.section-products img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.section-products .product-text {
+    width: 50rem;
+}
+
+.section-products .product-price {
+    color: var(--green-color);
+    font-family: "Grand Hotel";
+    font-size: 1.5rem;
+}
+
+.section-products .product-name {
+    font-size: 1.8rem;
+}
+
+/* ##########
+Products
+################## */
+
+.section-service {
+    padding: 5rem 0;
+}
+
+.section-service p,
+.section-service h2 {
+    text-align: center;
+}
+
+.section-service .container-center {
+    display: flex;
+    gap: 3rem;
+}
+
+.section-service .container-center .service-box {
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    width: 30rem;
+    text-align: center;
+
+}
+
+.section-service .container-center .service-box img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section-service .container-center .service-box p {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.section-service .container-center .service-box a {
+
+    margin-bottom: 2rem;
+}
+
+.section-service .container-center .service-box .image-box {
+    position: relative;
+}
+
+.section-service .container-center .service-box .service-icon {
+    position: absolute;
+    bottom: -5%;
+    left: 45%;
+    border-radius: 50%;
+    padding: 0.5rem;
+    background-color: #aed585;
+    outline: 5px solid #e0e0e0;
+}

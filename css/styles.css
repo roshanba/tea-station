@@ -58,16 +58,20 @@ GENERIC STYLES
     background-color: #aed585;
 }
 
-.fas {
-    color: var(--green-color);
-    font-size: 3rem;
-}
+
 
 h2 {
     letter-spacing: 5px;
     font-size: 2rem;
     margin: 2rem 0;
     font-weight: bold;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #617d98;
+
 }
 
 h6 {
@@ -161,6 +165,11 @@ FEATURE
     transform: translate();
 
 
+}
+
+.section-features .fas {
+    color: var(--green-color);
+    font-size: 3rem;
 }
 
 
@@ -291,4 +300,81 @@ Products
     padding: 0.5rem;
     background-color: #aed585;
     outline: 5px solid #e0e0e0;
+}
+
+
+/* ##########
+Contact
+################## */
+.section-contact .fas {
+    color: var(--green-color);
+    font-size: 1.5rem;
+
+}
+
+.section-contact {
+    background-color: #f1f5f8;
+    padding: 4rem 0;
+}
+
+.section-contact .contact-title {
+    color: var(--green-color);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+
+}
+
+.section-contact .contact-text {
+
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 2rem;
+
+}
+
+.section-contact .container-center {
+    display: flex;
+}
+
+.section-contact .contact-items {
+    width: 40rem;
+
+}
+
+.section-contact .contact-form {
+    width: 50rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+
+}
+
+.section-contact .contact-form input,
+.section-contact .contact-form textarea {
+    width: 90%;
+    padding: 0.9rem;
+    margin: 1rem;
+    background-color: #f1f5f8;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+}
+
+.btn-submit {
+    display: inline-block;
+    width: 100%;
+    background-color: var(--green-color);
+    padding: 1rem 0;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }

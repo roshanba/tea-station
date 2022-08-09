@@ -207,7 +207,7 @@ About
 }
 
 .section-about .about-box {
-    width: 30rem;
+    max-width: 30rem;
 
 
 }

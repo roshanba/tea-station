@@ -11,6 +11,10 @@ GENERIC STYLES
 
 }
 
+body {
+    overflow-x: hidden;
+}
+
 :root {
     --green-color: #678e3e;
 }

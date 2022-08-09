@@ -187,7 +187,7 @@ About
 }
 
 .section-about .img {
-    width: 30rem;
+    max-width: 30rem;
     outline: 10px solid var(--green-color);
 }
 
@@ -214,7 +214,7 @@ About
 }
 
 /* ##########
-About
+Prodcusts
 ################## */
 
 .section-products {
@@ -234,7 +234,7 @@ About
 }
 
 .section-products .product-text {
-    width: 50rem;
+    max-width: 50rem;
 }
 
 .section-products .product-price {
@@ -248,7 +248,7 @@ About
 }
 
 /* ##########
-Products
+services
 ################## */
 
 .section-service {
@@ -268,7 +268,7 @@ Products
 .section-service .container-center .service-box {
     border-radius: 5px;
     background-color: #e0e0e0;
-    width: 30rem;
+    max-width: 30rem;
     text-align: center;
 
 }
@@ -339,12 +339,13 @@ Contact
 }
 
 .section-contact .contact-items {
-    width: 40rem;
+    max-width: 40rem;
+    padding: 1rem;
 
 }
 
 .section-contact .contact-form {
-    width: 50rem;
+    max-width: 50rem;
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
@@ -353,7 +354,7 @@ Contact
 
 .section-contact .contact-form input,
 .section-contact .contact-form textarea {
-    width: 90%;
+    max-width: 90%;
     padding: 0.9rem;
     margin: 1rem;
     background-color: #f1f5f8;
@@ -377,4 +378,55 @@ Contact
     font-weight: bold;
     border-bottom-right-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+@media (max-width: 480px) {
+
+
+
+    .section-features .feature-box {
+        padding: 2rem;
+        background-color: #e0e0e0;
+        width: 25vw;
+    }
+
+    .section-header .two {
+        font-size: 3rem;
+    }
+
+    .section-header .one {
+        font-size: 1.6rem;
+    }
+
+
+
+    .section-features {
+        flex-direction: column;
+
+    }
+
+    .section-features .feature-box {
+
+        width: 90vw;
+    }
+
+    .section-about {
+        flex-direction: column;
+    }
+
+    .section-service .container-center {
+        flex-direction: column;
+    }
+
+    .section-products .container-center {
+        flex-direction: column;
+
+
+    }
+
+    .section-contact .container-center {
+        flex-direction: column;
+    }
+
+
 }

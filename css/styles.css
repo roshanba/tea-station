@@ -354,7 +354,7 @@ Contact
 
 .section-contact .contact-form input,
 .section-contact .contact-form textarea {
-    max-width: 90%;
+    width: 100%;
     padding: 0.9rem;
     margin: 1rem;
     background-color: #f1f5f8;

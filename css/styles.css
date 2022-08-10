@@ -475,11 +475,13 @@ Contact
     .section-features {
         flex-direction: column;
 
+
     }
 
     .section-features .feature-box {
 
         width: 90vw;
+        width: 100%;
     }
 
     .section-about {

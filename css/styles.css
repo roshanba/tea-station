@@ -313,7 +313,7 @@ FEATURE
 
 .section-features .feature-box:hover {
     background-color: #fff;
-    border-bottom: 2px solid var(--green-color);
+    box-shadow: 0px 3px rgb(1, 101, 44);
 
 
 }

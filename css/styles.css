@@ -25,13 +25,7 @@ body {
     --green-color: #678e3e;
 }
 
-.nav-btn {
-    position: absolute;
-    top: 6%;
-    left: 6%;
-    color: var(--green-color);
-    font-size: 2rem
-}
+
 
 .sm-margin {
     margin-top: 0.3rem;
@@ -110,20 +104,6 @@ h6 {
 /* ##########
 HEADER
 ################## */
-
-.section-header {
-    background: rgba(0, 0, 0, 0.7);
-    height: 100vh;
-    background-image: url("../images/main-bcg.jpeg");
-    background-blend-mode: darken;
-    background-size: cover;
-    color: red;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 @keyframes slideIn {
 
     0% {
@@ -143,7 +123,7 @@ HEADER
 
     100% {
         transform: translateX(0%);
-        opacity: 75%;
+        opacity: 100%;
     }
 
 }
@@ -151,26 +131,73 @@ HEADER
 @keyframes slideOut {
 
     0% {
-        transform: translateX(-200px);
+        transform: translateX(-100%);
         opacity: 0%;
     }
 
     25% {
-        transform: translateX(-200px);
+        transform: translateX(100%);
         opacity: 25%;
     }
 
     75% {
-        transform: translateX(50px);
+        transform: translateX(-25%);
         opacity: 75%;
     }
 
     100% {
         transform: translateX(0);
-        opacity: 75%;
+        opacity: 100%;
     }
 
 }
+
+@keyframes popOut {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(2);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+.nav-btn {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    color: var(--green-color);
+    font-size: 2rem;
+
+}
+
+.nav-btn i {
+    display: block;
+    transform: scale(3x);
+    /* animation-name: popOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+}
+
+.section-header {
+    background: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    background-image: url("../images/main-bcg.jpeg");
+    background-blend-mode: darken;
+    background-size: cover;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
 
 
 
@@ -195,6 +222,8 @@ HEADER
     line-height: 0.9;
     font-weight: 700;
     margin: 1.5rem 0;
+    animation-name: slideOut;
+    animation-duration: 5s;
 
 }
 
@@ -276,11 +305,15 @@ FEATURE
     width: 25vw;
 }
 
-.section-features .feature-box:hover {
+.section-features .feature-box:hover .skill-icon {
+    transform: translateY(-10px);
+    transition: all 1s linear;
+}
 
+
+.section-features .feature-box:hover {
     background-color: #fff;
     border-bottom: 2px solid var(--green-color);
-    transform: translate();
 
 
 }
@@ -562,4 +595,22 @@ Contact
     }
 
 
+}
+
+
+.section-test {
+    width: 500px;
+    height: 500px;
+    background-color: grey;
+}
+
+.section-test .hello {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    ;
+}
+
+.section-test .hello:hover {
+    transform: scale(3);
 }

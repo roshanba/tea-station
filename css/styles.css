@@ -124,6 +124,30 @@ HEADER
     text-align: center;
 }
 
+@keyframes slideIn {
+
+    0% {
+        transform: translateX(200px);
+        opacity: 0%;
+    }
+
+    25% {
+        transform: translateX(-200px);
+        opacity: 25%;
+    }
+
+    75% {
+        transform: translateX(50px);
+        opacity: 75%;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+
+}
+
 .section-header .one {
     color: var(--green-color);
     font-size: 3rem;
@@ -131,6 +155,9 @@ HEADER
     line-height: 0.9;
     font-weight: 700;
     letter-spacing: 2px;
+    animation-name: slideIn;
+    animation-duration: 5s;
+
 
 }
 

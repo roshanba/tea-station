@@ -173,12 +173,15 @@ HEADER
     left: 6%;
     color: var(--green-color);
     font-size: 2rem;
-
+    animation-name: popOut;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
+
+
 .nav-btn i {
-    display: block;
-    transform: scale(3x);
+
     /* animation-name: popOut;
     animation-duration: 3s;
     animation-iteration-count: infinite; */
@@ -225,8 +228,19 @@ HEADER
     animation-name: slideOut;
     animation-duration: 5s;
 
+
 }
 
+.section-header .btn:active .section-header .btn:link {
+    background-color: var(--green-color);
+    color: #fff;
+}
+
+.section-header .btn:active .section-header .btn:hover {
+    background-color: #fff;
+    color: var(--green-color);
+
+}
 
 .modal {
     text-align: center;

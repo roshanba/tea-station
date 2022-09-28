@@ -354,6 +354,8 @@ About
 .section-about .img {
     max-width: 30rem;
     outline: 10px solid var(--green-color);
+    background-color: var(--green-color);
+    ;
     overflow: hidden;
 
 }
@@ -368,6 +370,8 @@ About
 .section-about .img img:hover {
 
     transform: scale(1.2);
+    opacity: 0.5;
+    transition: all 1.2s linear;
 }
 
 .section-about .about-box {
@@ -519,11 +523,12 @@ Contact
 .section-contact .container-center {
     display: flex;
     justify-content: space-around;
+    padding: 2rem;
 }
 
 .section-contact .contact-items {
     max-width: 40rem;
-    padding: 1rem;
+
 
 }
 
@@ -532,6 +537,7 @@ Contact
     text-align: center;
     background-color: #fff;
     border-radius: 10px;
+    box-shadow: 0 5px 5px #e1e1e1;
 
 
 }
@@ -623,18 +629,32 @@ Contact
 
 
 .section-test {
-    width: 500px;
-    height: 500px;
-    background-color: grey;
+    background-color: purple;
+    padding: 10rem 0;
+
 }
 
-.section-test .hello {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    ;
+.checkout {
+    width: 40%;
+    float: left;
 }
 
-.section-test .hello:hover {
-    transform: scale(3);
+
+.product img {
+    width: 100%;
+}
+
+.products {
+    width: 60%;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.product {
+    width: 25%;
+    margin: 0 1rem;
+    float: left;
 }
